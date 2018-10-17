@@ -25,3 +25,6 @@ Route::get('google', function () {
 
 Route::get('auth/google', 'Auth\AuthController@redirectToGoogle');
 Route::get('auth/google/callback', 'Auth\AuthController@handleGoogleCallback');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
