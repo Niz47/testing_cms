@@ -1,0 +1,107 @@
+/*Typography*/
+
+@font-face {
+    font-family: 'montserratbold';
+    /*src: url('/assets/fonts/Montserrat-Regular-webfont.ttf') format("truetype");*/
+    src: url('/assets/fonts/Montserrat-Bold-webfont.eot');
+    src: url('/assets/fonts/Montserrat-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Montserrat-Bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/Montserrat-Bold-webfont.woff') format('woff'),
+         url('/assets/fonts/Montserrat-Bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/Montserrat-Bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('/assets/fonts/Montserrat-Light-webfont.eot');
+    src: url('/assets/fonts/Montserrat-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Montserrat-Light-webfont.woff2') format('woff2'),
+         url('/assets/fonts/Montserrat-Light-webfont.woff') format('woff'),
+         url('/assets/fonts/Montserrat-Light-webfont.ttf') format('truetype'),
+         url('/assets/fonts/Montserrat-Light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrathairline';
+    src: url('/assets/fonts/Montserrat-Hairline.eot');
+    src: url('/assets/fonts/Montserrat-Hairline.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Montserrat-Hairline.woff2') format('woff2'),
+         url('/assets/fonts/Montserrat-Hairline.woff') format('woff'),
+         url('/assets/fonts/Montserrat-Hairline.ttf') format('truetype'),
+         url('/assets/fonts/Montserrat-Hairline.svg#montserrathairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('/assets/fonts/Montserrat-Regular-webfont.eot');
+    src: url('/assets/fonts/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Montserrat-Regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/Montserrat-Regular-webfont.woff') format('woff'),
+         url('/assets/fonts/Montserrat-Regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'AvantGarde Md Bt Medium';
+    src: url('/assets/fonts/avantgarde_md_bt.eot');
+    src: url('/assets/fonts/avantgarde_md_bt.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/avantgarde_md_bt.woff2') format('woff2'),
+         url('/assets/fonts/avantgarde_md_bt.woff') format('woff'),
+         url('/assets/fonts/avantgarde_md_bt.ttf') format('truetype'),
+         url('/assets/fonts/avantgarde_md_bt.svg#AvantGarde Md Bt Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'Zawgyi-One';
+    src: url('/assets/fonts/zawgyi.woff') format('woff'), 
+         url('/assets/fonts/zawgyi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-family-sans-serif:  'Open Sans', 'Zawgyi-One', sans-serif;
+@font-family-montserrat:  'montserratregular','Zawgyi-One', sans-serif;
+@font-family-montserrat-light:  'montserratlight','Zawgyi-One', sans-serif;
+@font-family-montserrat-hairline:  'montserrathairline','Zawgyi-One', sans-serif;
+/*@font-family-avantgarde:  'AvantGarde Md Bt Medium','Zawgyi-One', sans-serif;*/
+@font-family-zawgyi:  'Zawgyi-One', sans-serif;
+
+
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~20px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~14px
+
+@font-size-h1:            floor((@font-size-base * 2.2)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2)); // ~32px
+@font-size-h3:            ceil((@font-size-base * 1.5)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~20px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~14px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.7;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    @font-family-montserrat;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;

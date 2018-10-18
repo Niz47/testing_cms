@@ -28,3 +28,14 @@ Route::get('auth/google/callback', 'Auth\AuthController@handleGoogleCallback');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('lang/{any}', 'HomeController@setLanguage');
+
+Route::get('lang/{locale}', function ($locale) {
+	\App::setLocale($locale);
+    \Session::put('langKey', $locale);
+    // return redirect()->back();
+    return view('welcome');
+});
+
+// setLanguage
