@@ -82,6 +82,8 @@ class AuthController extends Controller
 
             if($existUser) {
             	Auth::login($existUser);
+                \App::setLocale($existUser->locale);
+                \Session::put('langKey', $existUser->locale);
                 // Auth::loginUsingId($existUser->id);
             }
             else {
@@ -101,6 +103,7 @@ class AuthController extends Controller
             // if(!$u->roles()->exists()) $u->attachRole(\App\Role::whereName('user')->first());
         }
 
-        return redirect()->route('home');
+        // return redirect()->route('home');
+        return redirect()->back();
     }
 }
