@@ -15,27 +15,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () {
+/*Route::get('/login', function () {
     return "Your email is not allowed!";
-});
+});*/
 
-Route::get('google', function () {
+/*Route::get('google', function () {
     return view('google');
-});
+});*/
 
 Route::get('auth/google', 'Auth\AuthController@redirectToGoogle');
 Route::get('auth/google/callback', 'Auth\AuthController@handleGoogleCallback');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 
-// Route::get('lang/{any}', 'HomeController@setLanguage');
+Route::get('/', 'PageController@index');
+// Route::get('lang/{lang}', 'TestController@setLanguage');
 
 Route::get('lang/{locale}', function ($locale) {
+	\Log::info("testing .... 123");
 	\App::setLocale($locale);
     \Session::put('langKey', $locale);
     // return redirect()->back();
-    return view('welcome');
+    return view('home');
 });
-
-// setLanguage

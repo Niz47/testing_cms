@@ -80,7 +80,7 @@
             <div class="content">
                 <div class="row">
                     <ul>
-                    @if(App::getLocale()=="en")
+                    @if(App::isLocale('en'))
                         <li><a href="{{url('/lang/my')}}">ျမန္မာ</a></li>
                     @else
                         <li><a href="{{url('/lang/en')}}">English</a></li>
@@ -88,11 +88,11 @@
                     </ul>
                 </div>
 
-               App -> {{ App::getLocale() }}
+               App -> {{ app()->getLocale() }}
                <br>
                Session -> {{Session::get('langKey')}}
-                <!-- {{Cookie::get('langKey')}} -->
-<br>
+                
+                <br>
                 @lang('ppv.home')
                 @lang('ppv.test1')
 
