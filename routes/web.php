@@ -30,12 +30,14 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/', 'PageController@index');
-// Route::get('lang/{lang}', 'TestController@setLanguage');
+Route::get('lang/{lang}', 'TestController@setLanguage');
 
-Route::get('lang/{locale}', function ($locale) {
+/*Route::get('lang/{locale}', function ($locale) {
 	\Log::info("testing .... 123");
 	\App::setLocale($locale);
     \Session::put('langKey', $locale);
     // return redirect()->back();
     return view('home');
-});
+});*/
+
+Route::get('/test', 'PageController@test');
