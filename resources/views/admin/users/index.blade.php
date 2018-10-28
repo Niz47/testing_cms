@@ -27,13 +27,17 @@
                   &nbsp;{{$user->name}}
               </td>
               <td>{{$user->email}} </td>
+                <td>{{@$user->role()->display_name}} </td>
+                <td>
+                <a href="{{ route('admin.users.edit', $user->id)}}" class="btn-default btn-xs btn">Edit</a>
+              </td>
             </tr>
             @endforeach
 
           </tbody>
         </table>
     </div>
-        <!-- {!!  $users->render(); !!} -->
+        {!!  $users->render(); !!}
     </div>
 </div>
 </div>

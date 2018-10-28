@@ -9,7 +9,7 @@
 
 <div class="form-group">
 	{!! Form::label('role', 'Role') !!}
-	{!! Form::select('role', [null=>'Please Select']+App\Role::lists('display_name', 'id')->all(), @$user->role()->id,
+	{!! Form::select('role', [null=>'Please Select']+App\Role::pluck('display_name', 'id')->all(), @$user->role()->id,
 	array( 'id' => 'role','class' => 'form-control')) !!}
 </div>
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateUserRequest;
 use App\User;
 use Auth;
 
@@ -74,8 +75,7 @@ class UserController extends Controller
 	public function update(CreateUserRequest $request, User $user)
 	{
 		$input = $request->all();
-		//dd($input);
-		$input['user_id'] = Auth::user()->id;
+		$input['user_id'] = $user->id;
 		$user->fill($input)->save();
 		if($input['role'])
 			$user->setRole($input['role']);

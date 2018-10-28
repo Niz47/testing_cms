@@ -45,9 +45,9 @@ Route::get('/test', 'PageController@test');
 
 // Route::group(array('prefix' => 'admin', 'middleware' => ['auth','perms']), function () {
 Route::group(array('prefix' => 'admin'), function () {
-    Route::get('users', 'Admin\UserController@index');
-    Route::get('users/{id}/edit', 'Admin\UserController@edit');
-    Route::post('users/{id}/edit', 'Admin\UserController@update');
+    Route::get('users', 'Admin\UserController@index')->name('admin.users.index');
+    Route::get('users/{user}/edit', 'Admin\UserController@edit')->name('admin.users.edit');
+    Route::patch('users/{user}/edit', 'Admin\UserController@update')->name('admin.users.update');
     /*Route::resource('users', 'Admin\UserController');
     Route::resource('roles', 'Admin\RoleController');*/
 });

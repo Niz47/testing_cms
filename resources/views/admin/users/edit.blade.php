@@ -6,7 +6,7 @@
 		{!! Form::model($user, ['route' => ['admin.users.update', $user->id], 'method'=>'PATCH']) !!}
 			@include('admin.users._form')
 		{!! Form::close() !!}
-	</div>	
+	</div>
 </div>
 @endsection
 
