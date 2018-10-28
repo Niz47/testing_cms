@@ -48,6 +48,13 @@ Route::group(array('prefix' => 'admin'), function () {
     Route::get('users', 'Admin\UserController@index')->name('admin.users.index');
     Route::get('users/{user}/edit', 'Admin\UserController@edit')->name('admin.users.edit');
     Route::patch('users/{user}/edit', 'Admin\UserController@update')->name('admin.users.update');
+
+
+    Route::get('roles', 'Admin\RoleController@index')->name('admin.roles.index');
+    Route::get('roles/create', 'Admin\RoleController@create')->name('admin.roles.create');
+    Route::patch('roles/create', 'Admin\RoleController@store')->name('admin.roles.store');
+    Route::get('roles/{role}/edit', 'Admin\RoleController@edit')->name('admin.roles.edit');
+    Route::patch('roles/{role}/edit', 'Admin\RoleController@update')->name('admin.roles.update');
     /*Route::resource('users', 'Admin\UserController');
     Route::resource('roles', 'Admin\RoleController');*/
 });
