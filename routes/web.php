@@ -41,3 +41,13 @@ Route::get('lang/{lang}', 'TestController@setLanguage');
 });*/
 
 Route::get('/test', 'PageController@test');
+
+
+// Route::group(array('prefix' => 'admin', 'middleware' => ['auth','perms']), function () {
+Route::group(array('prefix' => 'admin'), function () {
+    Route::get('users', 'Admin\UserController@index');
+    Route::get('users/{id}/edit', 'Admin\UserController@edit');
+    Route::post('users/{id}/edit', 'Admin\UserController@update');
+    /*Route::resource('users', 'Admin\UserController');
+    Route::resource('roles', 'Admin\RoleController');*/
+});

@@ -3,11 +3,12 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
+use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, EntrustUserTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -26,4 +27,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function role()
+    {
+        return @$this->roles()->first();
+    }
+
+    public function setRole($role_id)
+    {
+        $this->detachRoles($this->roles()->get());
+        $this->roles()->attach($role_id);
+    }
 }
