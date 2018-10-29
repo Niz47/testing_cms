@@ -1,4 +1,4 @@
-@extends('admin.admin_layout')
+@extends('layouts.app')
 @section('content')
 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 well">
 	<h2>Add a new Role</h2>

@@ -1,4 +1,4 @@
-@extends('admin.admin_layout')
+@extends('layouts.app')
 
 @section('content')
     <div class="well container admin-container">

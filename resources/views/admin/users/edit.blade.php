@@ -1,4 +1,4 @@
-@extends('admin.admin_layout')
+@extends('layouts.app')
 @section('content')
 <div class="container admin-container">
 	<div class="col-xs-8 col-xs-offset-2 well">
