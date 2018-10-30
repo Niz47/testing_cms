@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Red dot is a revolutionary new payments company that is rapidly building a network in Myanmar. We make a range of innovative products and services available to everyone through our huge network of local Red dot shops.">
+    <meta name="keywords" content="visa, pre pay visan, easy bills, online payment, pay bills, utility bill payment, mobile top up, electronic top up, e-top up, Myanmar, Mobile e-top up">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'PPV') }}</title>
+    <title>{{ config('app.name', 'Red dot Pre Pay Visa') }}</title>
+    <link rel="Shortcut Icon" href="{{ asset('favicon.ico') }} " />
 
     <!-- Styles -->
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->

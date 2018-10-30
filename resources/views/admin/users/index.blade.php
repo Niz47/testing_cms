@@ -29,8 +29,10 @@
               <td>{{$user->email}} </td>
                 <td>{{@$user->role()->display_name}} </td>
                 <td>
-                <a href="{{ route('admin.users.edit', $user->id)}}" class="btn-default btn-xs btn">Edit</a>
-              </td>
+                  @if(Auth::user()->can('user-edit'))
+                    <a href="{{ route('admin.users.edit', $user->id)}}" class="btn-default btn-xs btn">Edit</a>
+                  @endif
+                </td>
             </tr>
             @endforeach
 

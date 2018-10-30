@@ -7,7 +7,9 @@
 <div class="row">
     <div class="col-md-12">
         <div class="pull-right">
-            <a href="{{ route('admin.roles.create') }}" class="btn btn-primary">Create Role</a>
+            @if(Auth::user()->can('role-create'))
+              <a href="{{ route('admin.roles.create') }}" class="btn btn-primary">Create Role</a>
+            @endif
         </div>
     </div>
 </div>
@@ -31,7 +33,9 @@
               </td>
               <td>{{$role->description}} </td>
               <td>
-                <a href="{{ route('admin.roles.edit', $role->id)}}" class="btn-default btn-xs btn">Edit</a>
+                  @if(Auth::user()->can('role-edit'))
+                    <a href="{{ route('admin.roles.edit', $role->id)}}" class="btn-default btn-xs btn">Edit</a>
+                  @endif
               </td>
             </tr>
             @endforeach

@@ -10,6 +10,16 @@ use App\Http\Requests\CreateRoleRequest;
 
 class RoleController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -52,7 +62,7 @@ class RoleController extends Controller
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  Role $role
 	 * @return Response
 	 */
 	public function show(Role $role)
@@ -63,7 +73,7 @@ class RoleController extends Controller
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  Role $role
 	 * @return Response
 	 */
 	public function edit(Role $role)
@@ -75,7 +85,7 @@ class RoleController extends Controller
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  Role $role
 	 * @return Response
 	 */
 	public function update(CreateRoleRequest $request, Role $role)
@@ -95,7 +105,7 @@ class RoleController extends Controller
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  Role $role
 	 * @return Response
 	 */
 	public function destroy(Role $role)

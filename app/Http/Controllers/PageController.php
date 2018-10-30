@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
+use App;
 
 class PageController extends Controller
 {
@@ -16,8 +18,22 @@ class PageController extends Controller
         return view('index');
     }
 
-    public function test()
+    /**
+     * setLanguage
+     *
+     */
+    public function setLanguage($lang)
     {
-        return view('index');
+        $languages = ['en', 'my'];
+        if (in_array($lang, $languages)) {
+            App::setLocale($lang);
+            Session::put('langKey', $lang);
+
+            /*\App::setLocale($lang);
+            \Session::set(static::$langKey, $lang);
+            \Session::save();*/
+        }
+
+        return redirect()->back();
     }
 }

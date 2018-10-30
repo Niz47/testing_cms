@@ -10,6 +10,16 @@ use Auth;
 
 class UserController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -17,7 +27,7 @@ class UserController extends Controller
 	 */
 	public function index()
 	{
-		$users = User::paginate();//dd($users);
+		$users = User::paginate();
 		return view('admin.users.index', compact('users'));
 	}
 
