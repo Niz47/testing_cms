@@ -20,11 +20,11 @@
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-nav-first">
-                         <li><a href="#about" class="smoothScroll">About</a></li>
-                         <li><a href="#activation" class="smoothScroll">Activation</a></li>
-                         <li><a href="#registration" class="smoothScroll">Registration</a></li>
-                         <li><a href="#benefits" class="smoothScroll">Benefits</a></li>
-                         <li><a href="#promotions" class="smoothScroll">Promotions</a></li>
+                         <li><a href="#about" class="smoothScroll">@lang('ppv.about')</a></li>
+                         <li><a href="#activation" class="smoothScroll">@lang('ppv.activation')</a></li>
+                         <li><a href="#registration" class="smoothScroll">@lang('ppv.registration')</a></li>
+                         <li><a href="#benefits" class="smoothScroll">@lang('ppv.benefits')</a></li>
+                         <li><a href="#promotions" class="smoothScroll">@lang('ppv.promotions')</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
