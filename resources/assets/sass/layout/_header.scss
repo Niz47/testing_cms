@@ -1,1 +1,141 @@
-/*HEADER*/
+.header-box {
+  margin: 40px 90px 40px 90px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  padding: 5px 15px;
+  color: #767676;
+}
+
+.reddot-logo {
+  margin: -20px 20px;
+}
+
+.visa-logo {
+  padding: 10px;
+}
+
+.navbar-right {
+  margin-right: 10px;
+}
+
+.mobile-navbar-right {
+  display: none;
+}
+
+.custom-navbar {
+  .navbar-nav {
+    > li {
+      > a {
+        &:hover, &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .nav {
+    li {
+      a:hover {
+        background: transparent;
+        color: #ff0c0c;
+        text-decoration: underline;
+      }
+      &.active {
+        > a {
+          background: transparent;
+          color: #ff0c0c;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .mobile-nav {}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+  .header-box {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    margin: 13px 13px;
+    padding: 0;
+    .navbar-header {
+      margin-bottom: -15px;
+
+      /* .mobile-nav {
+         background-image: url(../images/menu.png);
+         background-repeat: no-repeat;
+         float: left;
+         margin-bottom: 0px;
+         margin-left: 8%;
+         opacity: .8;
+       }  */
+    }
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .mobile-navbar-right {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    > li {
+      display: inline-table;
+      margin-left: 0;
+    }
+  }
+
+  .reddot-logo {
+    height: auto;
+    margin: -20px 0;
+    width: 80px;
+  }
+
+  .visa-logo {
+    height: auto;
+    width: 90px;
+  }
+
+  .navbar-collapse {
+    &.in {
+      overflow-y: visible;
+    }
+
+    ul {
+      font-size: 1.6em;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      text-align: center;
+      > li {
+        display: inline;
+      }
+    }
+  }
+ } 
+
+@media only screen and (min-device-width: 445px) and (max-device-width: 720px) {
+  .mobile-navbar-right {
+    display: inline-block;
+    float: right;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 990px) {
+  .mobile-navbar-right {
+    display: none;
+  }
+  .navbar-right {
+    display: block;
+  }
+  .reddot-logo {
+    width: 88px;
+  }
+  .visa-logo {
+    width: 110px;
+  }
+} 
