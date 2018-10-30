@@ -1,6 +1,9 @@
 <?php
 
-return array (
-  'test1' => 'hello 123',
-  'home' => 'Home',
-);
+return [
+  'about' => 'About',
+  'activation' => 'Activation',
+  'registration' => 'Registration',
+  'benefits' => 'Benefits',
+  'promotions' => 'Promotions',
+];

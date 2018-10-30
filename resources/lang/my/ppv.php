@@ -1,6 +1,9 @@
 <?php
 
-return array (
-  'test1' => 'hi 123',
-  'home' => 'ပင္မစာမ်က္ႏွာ',
-);
+return [
+  'about' => 'ျမန္မာAbout',
+  'activation' => 'ျမန္မာActivation',
+  'registration' => 'ျမန္မာRegistration',
+  'benefits' => 'ျမန္မာBenefits',
+  'promotions' => 'ျမန္မာPromotions',
+];

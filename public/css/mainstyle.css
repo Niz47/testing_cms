@@ -65,6 +65,10 @@ p {
 	padding: 5px 15px;
 }
 
+.header-box a {
+	color: #767676;
+}
+
 .reddot-logo {
 	margin: -20px 20px;
 }
