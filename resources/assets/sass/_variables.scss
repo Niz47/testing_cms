@@ -48,3 +48,13 @@ $bg-darkred: #d90000;
 $font-grey: #717171;
 $font-red: #ff0c0c;
 $font-p: #767676;
+
+@font-face {
+    font-family: 'Zawgyi-One';
+    src: url('../fonts/zawgyi.woff') format('woff'), 
+         url('../fonts/zawgyi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+$font-family-sans-serif: 'Open Sans', 'Zawgyi-One', sans-serif;
+$font-family-zawgyi: 'Zawgyi-One', sans-serif;
