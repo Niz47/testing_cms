@@ -25,7 +25,7 @@
                     <div class="col-md-4 col-sm-2 col-xs-0"></div>
                     <div class="col-md-4 col-sm-5 col-xs-12">
                          <div class="row app">
-                              <div class="col-md-6 col-sm-6 col-xs-6 download-txt"><span>Download the App Today</span></div>
+                              <div class="col-md-6 col-sm-6 col-xs-6 download-txt"><span>@lang('ppv.download_app')</span></div>
                               <div class="col-md-3 col-sm-3 col-xs-3 googleplay"><a href="#"><img src="images/googleplay.png"></a></div>
                               <div class="col-md-3 col-sm-3 col-xs-3 appstore"><a href="#"><img src="images/app_store.png"></a></div>
                          </div>
