@@ -7,9 +7,9 @@
                               <!-- <p>Testing 1</p> -->
                               <div class="col-md-6 col-sm-7 col-xs-5">
                                    @if(App::isLocale('en'))
-                                        <a href="{{url('/lang/my')}}"><img src="images/changeLanguage-mm.png" class="changelang"></a>
+                                        <a href="{{url('/lang/my')}}"><img src="images/changeLanguage-en.png" class="changelang"></a>
                                    @else
-                                       <a href="{{url('/lang/en')}}"><img src="images/changeLanguage-en.png" class="changelang">
+                                       <a href="{{url('/lang/en')}}"><img src="images/changeLanguage-mm.png" class="changelang">
                                    @endif
                               </div>
                               <div class="col-md-0 col-sm-0 col-xs-3"></div>
