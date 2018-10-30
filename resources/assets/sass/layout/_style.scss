@@ -5,12 +5,12 @@
 }
 
 body {
-	color: #767676;
+	color: $font-p;
 	position: relative; 
 }
 
 .red-text {
-	color: #ff0c0c;
+	color: $font-red;
 }
 .white-text {
 	color: #ffffff;

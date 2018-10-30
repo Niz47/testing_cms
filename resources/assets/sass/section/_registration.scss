@@ -1,6 +1,6 @@
 /* registration */
 #registration {
-	background: #ededed;
+	background: $bg-grey;
 	.registration-info {
 		padding: 20px 10px;
 		h4 {
@@ -14,7 +14,7 @@
 	}
 }
 #e-kyc {
-	background: #ededed;
+	background: $bg-grey;
 	.e-kyc-info {
 		padding: 20px 10px;
 		p {
@@ -22,7 +22,7 @@
 		}
 	}
 	.e-kyc-img {
-		/*background-image: url(../images/e-kyc.png);*/
+		background-image: url(../images/e-kyc.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		height: 450px;
@@ -63,7 +63,7 @@
 			}
 		}
 		.e-kyc-img {
-			/*background-image: url(../images/e-kyc-mobile-view.png);*/
+			background-image: url(../images/e-kyc-mobile-view.png);
 			background-position: top;
 			background-repeat: no-repeat;
 			background-size: contain;
