@@ -31,6 +31,10 @@ p {
 	padding: 5px 0;
 }
 
+a, a:active, a:focus{
+    outline: none; /* Works in Firefox, Chrome, IE8 and above */ 
+}
+
 .light-shadow {
 	-moz-box-shadow: 0 3px 10px #bcbcbc;
 	-webkit-box-shadow: 0 3px 10px #bcbcbc;
@@ -43,8 +47,6 @@ p {
 	box-shadow: 0 3px 10px #bcbcbc;
 }
 
-@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
 	p {
 		font-size: .8em;
@@ -87,24 +89,21 @@ p {
 
 .custom-navbar .navbar-nav > li > a:hover,
 .custom-navbar .navbar-nav > li > a:focus {
-background-color: transparent;
+	background-color: transparent;
 }
 
 .custom-navbar .nav li a:hover, .custom-navbar .nav li.active > a {
-background: transparent;
-color: #ff0c0c;
-text-decoration: underline;
+	background: transparent;
+	color: #ff0c0c;
+	text-decoration: underline;
 }
 
-@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
 	.header-box {
 		margin: 13px 13px;
 		background-color: rgba(255, 255, 255, 1);
 		border-radius: 8px;
 		box-shadow: 0 1px 5px rgba(0,0,0,0.15);
-		/*padding: 0;*/
 	}
 	.header-box .navbar-header {
 		margin-bottom: -15px;
@@ -196,8 +195,6 @@ text-decoration: underline;
 	padding-left: 20px;
 }
 
-/* @media only screen  and (min-width : 1224px) {
-} */
 @media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
 	#about {
 		padding-top: 80px;
@@ -250,10 +247,6 @@ text-decoration: underline;
 	padding: 25px 0 25px;	
 }
 
-/* @media only screen  and (min-width : 1224px) {
-} */
-@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
 	#activation .activation-img {
 		height: 250px;
@@ -275,8 +268,6 @@ text-decoration: underline;
 		line-height: 1.3em;
 	} 
 
-}
-@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
 }
 
 /* registration */
@@ -322,10 +313,6 @@ text-decoration: underline;
 	padding: 25px 0 25px;
 }
 
-/* @media only screen  and (min-width : 1224px) {
-} */
-@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
 	#registration .registration-info {
 		padding: 0 10px 20px 10px;
@@ -360,8 +347,6 @@ text-decoration: underline;
 		margin-bottom: 0;
 	}
 }
-@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
-}
 
 /* benefits */
 #benefits {
@@ -372,7 +357,7 @@ text-decoration: underline;
 #benefits .benefits-left {
  	background: #d90000;
  	padding-left: 4%;
- 	height: 600px;
+ 	height: 490px;
 }
 
 #benefits .benefits-left h2 {
@@ -381,7 +366,7 @@ text-decoration: underline;
 
 #benefits .benefits-left ul > li {
  	list-style: none;
-	font-size: 1.4em;
+	font-size: 1.7em;
 	padding: 10px 0;
 } 
 
@@ -395,17 +380,13 @@ text-decoration: underline;
 
 #benefits .benefits-right .full-benefits-img {
 	position: relative;
-	margin-left: -7%;
+	margin-left: -25%;
 }
 
 #benefits .benefits-right .half-benefits-img {
 	display: none;
 }
 
-/* @media only screen  and (min-width : 1224px) {
-} */
-@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
 	#benefits .benefits-right .full-benefits-img {
 		display: none;
@@ -417,8 +398,6 @@ text-decoration: underline;
 	#benefits .benefits-left {
 		display: none;
 	}
-}
-@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
 }
 
 /* promotion */
@@ -441,10 +420,6 @@ text-decoration: underline;
 	left: 12%;
 } 
 
-/* @media only screen  and (min-width : 1224px) {
-} */
-@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
 	#promotions {
 		padding-bottom: 50px;
@@ -499,10 +474,6 @@ text-decoration: underline;
 	padding: 0 9px;
 } 
 
-/* @media only screen  and (min-width : 1224px) {
-} */
-@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
 	.footer .app {
 		margin: auto;
