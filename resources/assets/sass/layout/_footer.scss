@@ -1,5 +1,47 @@
-/*FOOTER*/
-
-#footer {
-	background-color: #be2f2c;
+/* footer */
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	.icon {
+		padding: 2px;
+		width: auto;
+	}
+	.app {
+		background: #000;
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+		padding: 13px 0;
+		.googleplay {
+			padding: 0 2px;
+		}
+		.appstore {
+			padding: 0 9px;
+		}
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+	.footer {
+		.app {
+			margin: auto;
+			.download-txt {
+				font-size: .8em;
+				padding: 2px;
+			}
+		}
+	}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 990px) {
+	.footer {
+		.app {
+			.download-txt {
+				font-size: .8em;
+				padding: 2px;
+			}
+		}
+	}
 }

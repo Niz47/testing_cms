@@ -1,3 +1,4 @@
+/* common style */
 *{
 	margin: 0;
 	padding: 0;
@@ -11,7 +12,6 @@ body {
 .red-text {
 	color: #ff0c0c;
 }
-
 .white-text {
 	color: #ffffff;
 }
@@ -31,6 +31,10 @@ p {
 	padding: 5px 0;
 }
 
+a, a:active, a:focus{
+    outline: none; /* Works in Firefox, Chrome, IE8 and above */ 
+}
+
 .light-shadow {
 	-moz-box-shadow: 0 3px 10px #bcbcbc;
 	-webkit-box-shadow: 0 3px 10px #bcbcbc;
@@ -43,8 +47,6 @@ p {
 	box-shadow: 0 3px 10px #bcbcbc;
 }
 
-@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
 	p {
 		font-size: .8em;

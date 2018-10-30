@@ -1,0 +1,38 @@
+/* activation */
+#activation {
+	background: #fd0a0a;
+	color: #fff;
+	.activation-info {
+		padding: 20px 10px;
+		p {
+			font-size: 1.2em;
+			line-height: 1.6em;
+		}
+	}
+	.activation-img {
+		padding: 25px 0 25px;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+	#activation {
+		.activation-img {
+			height: 250px;
+			position: inherit;
+			padding: 0;
+			margin-top: -50px;
+			img {
+				position: absolute;
+				clip: rect(50px, auto, auto, 0px);
+			}
+		}
+		.activation-info {
+			h2 {
+				padding: 10px 0;
+			}
+			p {
+				font-size: 1em;
+				line-height: 1.3em;
+			}
+		}
+	}
+}

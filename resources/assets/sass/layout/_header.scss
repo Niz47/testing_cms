@@ -1,10 +1,16 @@
+/* header */
 .header-box {
   margin: 40px 90px 40px 90px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
   padding: 5px 15px;
-  color: #767676;
+}
+
+.header-box {
+  a {
+    color: #767676;
+  }
 }
 
 .reddot-logo {
@@ -49,7 +55,6 @@
       }
     }
   }
-  .mobile-nav {}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
@@ -62,14 +67,14 @@
     .navbar-header {
       margin-bottom: -15px;
 
-      /* .mobile-nav {
-         background-image: url(../images/menu.png);
+      .mobile-nav {
+         /*background-image: url(../images/menu.png);*/
          background-repeat: no-repeat;
          float: left;
          margin-bottom: 0px;
          margin-left: 8%;
          opacity: .8;
-       }  */
+       }  
     }
   }
 
