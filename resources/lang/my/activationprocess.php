@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'ျမန္မာ ... Activation Process',
+    'title' => 'ျမန္မာ ... Activation',
     'go_to_exclusive_reddot_merchants' => 'ျမန္မာ ... Go to exclusive Red dot merchants to purchase your UAB Red dot Prepaid Visa card',
     'give_your_myanmar_mobile_phone_number' => 'ျမန္မာ ... Give your Myanmar mobile phone number to the merchant',
     'you_will_receive_an_activation_code' => 'ျမန္မာ ... You will receive an activation code and link to download the Red dot mobile application.',

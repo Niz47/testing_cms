@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 /*Route::get('/login', function () {
     return "Your email is not allowed!";
@@ -23,13 +23,14 @@ Route::get('/', function () {
     return view('google');
 });*/
 
+Route::get('/', 'PageController@index');
+
 Route::get('auth/google', 'Auth\AuthController@redirectToGoogle');
 Route::get('auth/google/callback', 'Auth\AuthController@handleGoogleCallback');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/', 'PageController@index');
 Route::get('lang/{lang}', 'TestController@setLanguage');
 
 /*Route::get('lang/{locale}', function ($locale) {

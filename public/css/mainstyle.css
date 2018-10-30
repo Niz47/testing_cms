@@ -1,0 +1,516 @@
+/* common style */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #767676;
+	position: relative; 
+}
+
+.red-text {
+	color: #ff0c0c;
+}
+.white-text {
+	color: #ffffff;
+}
+
+img {
+	width: 100%;
+}
+
+h2 {
+	font-weight: bold;
+	padding: 20px 0;
+} 
+
+p {
+	font-size: 1.2em;
+	line-height: 1.6em;
+	padding: 5px 0;
+}
+
+.light-shadow {
+	-moz-box-shadow: 0 3px 10px #bcbcbc;
+	-webkit-box-shadow: 0 3px 10px #bcbcbc;
+	box-shadow: 0 3px 10px #bcbcbc;
+}
+
+.dark-shadow {
+	-moz-box-shadow: 0 3px 10px #bcbcbc;
+	-webkit-box-shadow: 0 3px 10px #bcbcbc;
+	box-shadow: 0 3px 10px #bcbcbc;
+}
+
+@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+	p {
+		font-size: .8em;
+	}
+}
+@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
+	p {
+		font-size: 1.3em;
+	}
+}
+
+/* header */
+.header-box {
+	margin: 40px 90px 40px 90px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 8px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+	padding: 5px 15px;
+}
+
+.reddot-logo {
+	margin: -20px 20px;
+}
+
+.visa-logo {
+	padding: 10px;
+}
+
+.navbar-right {
+	margin-right: 10px;
+}
+
+.mobile-navbar-right {
+	display: none;
+}
+
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+background-color: transparent;
+}
+
+.custom-navbar .nav li a:hover, .custom-navbar .nav li.active > a {
+background: transparent;
+color: #ff0c0c;
+text-decoration: underline;
+}
+
+@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+	.header-box {
+		margin: 13px 13px;
+		background-color: rgba(255, 255, 255, 1);
+		border-radius: 8px;
+		box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+		/*padding: 0;*/
+	}
+	.header-box .navbar-header {
+		margin-bottom: -15px;
+	}
+	.mobile-nav {
+		background-image: url(../images/menu.png);
+		background-repeat: no-repeat;
+		float: left;
+		margin-left: 8%;
+		opacity: .8;
+		margin-bottom: 0px;
+	}
+
+	.navbar-right {
+		display: none;
+	}
+
+	.mobile-navbar-right {
+		display: inline-block;
+		float: right;
+		margin: 0;
+		padding: 0;
+		width: 65%;
+	}
+
+	.mobile-navbar-right>li {
+		display: inline-table;
+		margin-left: 0;
+	}
+
+	.reddot-logo {
+		width: 80px;
+		height: auto;
+		margin: -20px 0;
+	}
+
+	.visa-logo {
+		width: 90px;
+		height: auto;
+	}
+	.navbar-collapse.in {
+		overflow-y: visible;
+	}
+	.navbar-collapse ul {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 20px;
+		font-size: 1.6em;
+	}
+	.navbar-collapse ul>li {
+		display: inline;
+	}
+}
+@media only screen and (min-device-width : 445px) and (max-device-width : 720px) {
+	.mobile-navbar-right {
+		display: inline-block;
+		float: right;
+		width: 50%;
+	}
+}
+@media only screen and (min-device-width : 720px) and (max-device-width : 990px) {
+	.mobile-navbar-right {
+		display: none;
+	}
+	.navbar-right {
+		display: block;
+	}
+	.reddot-logo {
+		width: 88px;
+	}
+	.visa-logo{
+		width: 110px;
+	}
+}
+
+/* about */
+#about {
+	background: #ededed;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+#about .about-img {
+	padding: 0 2%;
+}
+
+#about .about-info {
+	padding-top: 90px;
+	padding-left: 20px;
+}
+
+/* @media only screen  and (min-width : 1224px) {
+} */
+@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
+	#about {
+		padding-top: 80px;
+	}
+
+	#about .about-info {
+		padding: 20px 0;
+	}
+
+	#about .about-info p {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+	#about .about-info {
+		padding: 20px 0;
+	}
+
+	#about .about-info p {
+		font-size: .8em;
+		line-height: 1.2em;
+		padding-bottom: 3px;
+	}
+}
+@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
+	#about .about-info p {
+		font-size: 1.3em;
+		line-height: 1.3em;
+		padding-bottom: 5px;
+	}
+}
+
+/* activation */
+#activation {
+	background: #fd0a0a;
+	color: #fff;
+}
+
+ #activation .activation-info {
+	padding: 20px 10px;
+} 
+
+#activation .activation-info p {
+	font-size: 1.2em;
+	line-height: 1.6em;
+} 
+
+#activation .activation-img {
+	padding: 25px 0 25px;	
+}
+
+/* @media only screen  and (min-width : 1224px) {
+} */
+@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+	#activation .activation-img {
+		height: 250px;
+		position: inherit;
+		padding: 0;
+		margin-top: -50px;
+	}
+	#activation .activation-img img {
+		position: absolute;
+		clip: rect(50px, auto, auto, 0px);
+	}
+
+	#activation .activation-info h2 {
+		padding: 10px 0;
+	} 
+
+	#activation .activation-info p {
+		font-size: 1em;
+		line-height: 1.3em;
+	} 
+
+}
+@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
+}
+
+/* registration */
+#registration, #e-kyc {
+	background: #ededed;
+}
+
+.reg-half-img {
+	display: none;
+}
+
+.show-full-img {
+	display: block;
+}
+
+#registration .registration-info {
+	padding: 20px 10px;
+} 
+
+#registration .registration-info h4 {
+	color: #6a6969;
+	line-height: 1.6em;
+	padding-bottom: 20px;
+} 
+
+#registration .registration-img {
+	padding: 25px 0 25px;
+} 
+
+#e-kyc .e-kyc-info {
+	padding: 20px 10px;
+} 
+
+#e-kyc .e-kyc-info p {
+	padding-bottom: 0;
+} 
+
+#e-kyc .e-kyc-img {
+	background-image: url(../images/e-kyc.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 450px;
+	padding: 25px 0 25px;
+}
+
+/* @media only screen  and (min-width : 1224px) {
+} */
+@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+	#registration .registration-info {
+		padding: 0 10px 20px 10px;
+	} 
+	#registration .registration-info h4 {
+		line-height: inherit;
+		line-height: 1.4em;
+	} 
+	#registration .registration-info p {
+		line-height: normal;
+		padding-bottom: 0;
+	} 
+	.reg-half-img {
+		display: block;
+		margin-bottom: 5%;
+	}
+	.show-full-img {
+		display: none;
+	}
+
+	#e-kyc .e-kyc-info h2 {
+		display: none;
+	} 
+
+	#e-kyc .e-kyc-img {
+		background-image: url(../images/e-kyc-mobile-view.png);
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 220px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}
+@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
+}
+
+/* benefits */
+#benefits {
+	background: #fd0a0a;
+	color: #fff;
+}
+
+#benefits .benefits-left {
+ 	background: #d90000;
+ 	padding-left: 4%;
+ 	height: 600px;
+}
+
+#benefits .benefits-left h2 {
+	padding: 30px 0 45px 0;
+}
+
+#benefits .benefits-left ul > li {
+ 	list-style: none;
+	font-size: 1.4em;
+	padding: 10px 0;
+} 
+
+#benefits .benefits-right {
+	padding-bottom: 20px;
+}
+
+#benefits .benefits-right p {
+	padding-left: 15px;
+}
+
+#benefits .benefits-right .full-benefits-img {
+	position: relative;
+	margin-left: -7%;
+}
+
+#benefits .benefits-right .half-benefits-img {
+	display: none;
+}
+
+/* @media only screen  and (min-width : 1224px) {
+} */
+@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+	#benefits .benefits-right .full-benefits-img {
+		display: none;
+	}
+	#benefits .benefits-right .half-benefits-img {
+		display: block;
+		padding-bottom: 3%;
+	}
+	#benefits .benefits-left {
+		display: none;
+	}
+}
+@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
+}
+
+/* promotion */
+#promotions {
+	background: #ededed;
+	padding-bottom: 100px;
+}
+
+#promotions .promotions-info {
+	padding: 20px 10px;
+} 
+
+#promotions .promotions-info .promotions-row {
+	padding: 20px 0;
+} 
+
+#promotions .promotions-info .promotions-row .caption {
+	position: absolute;
+    top: 45%;
+	left: 12%;
+} 
+
+/* @media only screen  and (min-width : 1224px) {
+} */
+@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+	#promotions {
+		padding-bottom: 50px;
+	}
+
+	#promotions .promotions-info .promotions-row {
+		padding: 0;
+	} 
+
+	#promotions .promotions-info .promotions-row .col-md-4 {
+		padding: 15px 0;
+	} 
+
+	#promotions .promotions-info .promotions-row .caption {
+	    top: 35%;
+		left: 8%;
+	} 
+}
+@media only screen and (min-device-width : 445px) and (max-device-width : 990px) {
+	#promotions .promotions-info .promotions-row .caption {
+	    top: 55%;
+		left: 8%;
+	} 
+}
+
+/* footer */
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent;
+	color: white;
+	text-align: center;
+}
+
+.footer .icon {
+	padding: 2px;
+	width: auto;
+}
+
+.footer .app {
+	background: #000;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	padding: 13px 0;
+}
+ .footer .app .googleplay {
+	padding: 0 2px;
+} 
+ .footer .app .appstore {
+	padding: 0 9px;
+} 
+
+/* @media only screen  and (min-width : 1224px) {
+} */
+@media only screen and (min-device-width : 990px) and (max-device-width : 1224px) {
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+	.footer .app {
+		margin: auto;
+	}
+	.footer .app .download-txt {
+		font-size: .8em;
+		padding: 2px;
+	} 
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 990px) {
+	.footer .app .download-txt {
+		font-size: .8em;
+		padding: 2px;
+	} 
+}
